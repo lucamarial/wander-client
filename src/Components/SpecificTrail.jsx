@@ -38,6 +38,7 @@ class SpecificTrail extends Component {
                 <Header as='h2' id={`title_${trail.id}`}>{trail.title}</Header>
                 <Image
                   id={`image_${trail.id}`}
+                  label={{ as: 'a', corner: 'left', icon: 'heart' }}
                   src={trail.image}
                 />
                 <Divider />
