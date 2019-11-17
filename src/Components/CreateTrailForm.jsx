@@ -20,7 +20,7 @@ const CreateTrailForm = (props) => {
           <Form.Input fluid id='extra-input' className='input-trail' name='extra' placeholder='Good to know' onChange={props.inputHandler} />
         </div>
         <div>
-          <Form.Input fluid id='location-input' className='input-trail' name='location' placeholder='Location' onChange={props.inputHandler} />
+          <Form.Input fluid id='location-input' className='input-trail' name='location' placeholder='City' onChange={props.inputHandler} />
         </div>
         <div>
           <select id='continent-input' type='input' placeholder='Select Continent' name='continents' onChange={props.inputHandler}>
@@ -33,10 +33,10 @@ const CreateTrailForm = (props) => {
           </select>
         </div>
         <div>
-          <Form.Input fluid id='duration-input' className='input-trail' name='duration' placeholder='Duration' onChange={props.inputHandler} />
+          <Form.Input fluid id='duration-input' className='input-trail' name='duration' placeholder='Duration (min)' onChange={props.inputHandler} />
         </div>
         <div>
-          <div id='rating'>Rating: { intensity }</div>
+          <div id='rating'>Itensity: { intensity }</div>
           <input
             id='intensity-rating'
             type='range'
