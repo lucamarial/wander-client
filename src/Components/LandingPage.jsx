@@ -31,10 +31,10 @@ class LandingPage extends Component {
   render() {
     let trailsData = this.state.trails
     let trailsList, welcomeMessage
-    let sarek = <img src={Sarek} id='image' alt='Sarek national park' width='1800' height='800'/>
-    let asiaJungle = <img src={AsiaJungle} id='image' alt='Asia Jungle' width='1800' height='750'/>
-    let yellowstone = <img src={YellowStone} id='image' alt='Yellowstone' width='1950' height='800'/>
-    let basteiBridge = <img src={BasteiBridge} id='image' alt='Bastei Bridge' width='1950' height='800' />
+    let sarek = <img src={Sarek} id='image' alt='Sarek national park' width='1800' height='650'/>
+    let asiaJungle = <img src={AsiaJungle} id='image' alt='Asia Jungle' width='1800' height='600'/>
+    let yellowstone = <img src={YellowStone} id='image' alt='Yellowstone' width='1950' height='600'/>
+    let basteiBridge = <img src={BasteiBridge} id='image' alt='Bastei Bridge' width='1950' height='600' />
     let errorMessage = <div compact id='error-message'>{this.state.errorMessage}</div>
 
     if (this.props.currentUser.isSignedIn) {

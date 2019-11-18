@@ -97,7 +97,7 @@ body {
 .ui.card {
   margin: 2rem!important;
   color: black;
-  height: 400px;
+  height: 90%;
 }
 
 #map-header {
