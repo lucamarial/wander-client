@@ -8,7 +8,6 @@ class CreateMap extends Component {
   }
 
   mapClicked = (mapProps, map, clickEvent) => {
-    debugger
     const lat = clickEvent.latLng.lat()
     const lng = clickEvent.latLng.lng()
     const trailsCopy = [...this.state.coordinates]
@@ -37,7 +36,7 @@ class CreateMap extends Component {
             lng: 10.0686
           }}
           onClick={this.mapClicked}
-          onChange={this.props.dropMarkerHandler}
+          onClick={this.props.dropMarkerHandler}
         >
           {trailsData.map(trail => {
           return(
